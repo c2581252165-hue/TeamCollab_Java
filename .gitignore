@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+target/
+dist/
+build/
+*.class
+*.jar
+
+# Local IDE and runtime files
+.idea/
+.vscode/
+*.log
+*.tmp
+
+# Local secrets and machine-specific config
+.env
+.env.*
+!.env.example
+application-local.yml
+
+# Packaged or non-source materials
+*.zip
+*.rar
+*.7z
+*.doc
+*.docx
+*.pdf
+*.ppt
+*.pptx
+!docs/
+!docs/介绍.docx

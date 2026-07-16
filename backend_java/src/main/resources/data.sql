@@ -1,0 +1,2 @@
+-- Seed data is intentionally omitted from the public repository.
+-- Create local users through the registration endpoint after configuring the database.

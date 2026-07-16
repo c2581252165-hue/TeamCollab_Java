@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+:root {
+  --el-color-primary: #18181b; /* Zinc 900 for primary elements */
+  --el-color-primary-light-3: #3f3f46;
+  --el-color-primary-light-5: #71717a;
+  --el-color-primary-light-7: #a1a1aa;
+  --el-color-primary-light-8: #d4d4d8;
+  --el-color-primary-light-9: #f4f4f5;
+  --el-color-primary-dark-2: #09090b;
+  
+  --el-bg-color: #ffffff;
+  --el-bg-color-overlay: #ffffff;
+  --el-bg-color-page: #fafafa;
+  --el-border-color: #e4e4e7;
+  --el-border-color-light: #f4f4f5;
+  --el-border-color-lighter: #fafafa;
+  
+  --el-text-color-primary: #09090b;
+  --el-text-color-regular: #3f3f46;
+  --el-text-color-secondary: #71717a;
+  
+  --el-border-radius-base: 6px;
+  --el-transition-duration: 0.15s;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #09090b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Base Light Background */
+.light-bg {
+  background-color: #ffffff;
+}
+
+/* Custom Scrollbar - Minimal */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e4e4e7;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4d4d8;
+}
+
+/* Element Plus Overrides for Minimalist SaaS */
+.el-dialog, .el-popover, .el-dropdown-menu, .el-picker-panel {
+  background: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+  border-radius: 8px !important;
+}
+
+.el-menu {
+  border-right: none !important;
+  background: transparent !important;
+}
+
+.el-input__wrapper, .el-textarea__inner {
+  background: #ffffff !important;
+  box-shadow: 0 0 0 1px #e4e4e7 inset !important;
+  border-radius: 6px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.el-input__wrapper:hover, .el-textarea__inner:hover {
+  box-shadow: 0 0 0 1px #d4d4d8 inset !important;
+}
+.el-input__wrapper.is-focus, .el-textarea__inner:focus {
+  box-shadow: 0 0 0 1px #18181b inset !important;
+}
+
+.el-button {
+  border-radius: 6px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.el-button--primary {
+  background-color: #18181b !important;
+  border-color: #18181b !important;
+  color: #ffffff !important;
+}
+
+.el-button--primary:hover {
+  background-color: #27272a !important;
+  border-color: #27272a !important;
+}
+
+.el-card {
+  border-radius: 8px;
+  border: 1px solid #e4e4e7;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Shadcn-like minimal utility classes */
+.minimal-border {
+  border: 1px solid #e4e4e7;
+}
+
+.minimal-shadow {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.text-muted {
+  color: #71717a;
+}
