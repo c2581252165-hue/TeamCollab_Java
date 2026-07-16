@@ -13,7 +13,7 @@
           <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-zinc-900 text-white shadow-md mb-6 transform transition-transform duration-300 hover:scale-105">
             <el-icon :size="28"><Monitor /></el-icon>
           </div>
-          <h2 class="text-3xl font-bold text-zinc-900 tracking-tight">CloudOffice</h2>
+          <h2 class="text-3xl font-bold text-zinc-900 tracking-tight">TeamCollab Java</h2>
           <p class="text-zinc-500 mt-2 font-medium text-sm">
             {{ isRegistering ? '创建您的账号以开始使用。' : "欢迎回来，让我们共创佳绩。" }}
           </p>

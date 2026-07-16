@@ -5,7 +5,7 @@
     <div class="h-10 text-white flex items-center px-4 justify-between select-none shadow-sm transition-colors" :class="isCodeIdeMode ? 'bg-[#333333]' : 'bg-blue-600'">
       <div class="flex items-center space-x-4">
         <el-icon class="text-xl"><Document /></el-icon>
-        <span class="font-semibold text-sm">CloudOffice Word</span>
+        <span class="font-semibold text-sm">TeamCollab Docs</span>
         <span v-if="activeFile" class="text-xs opacity-80 border-l border-white/30 pl-3">{{ activeFile.replace(/\//g, ' > ') }}</span>
       </div>
       
@@ -137,7 +137,7 @@
         <div class="flex-1 flex flex-col w-full h-full items-center relative">
           <div v-if="!activeFile" class="flex flex-col items-center justify-center h-full" :class="isCodeIdeMode ? 'text-zinc-500' : 'text-zinc-400'">
             <el-icon class="text-8xl mb-6 opacity-30"><Document /></el-icon>
-            <p class="text-xl font-semibold mb-2" :class="isCodeIdeMode ? 'text-zinc-400' : 'text-zinc-500'">CloudOffice {{ isCodeIdeMode ? 'IDE' : 'Word' }}</p>
+            <p class="text-xl font-semibold mb-2" :class="isCodeIdeMode ? 'text-zinc-400' : 'text-zinc-500'">TeamCollab Java {{ isCodeIdeMode ? 'IDE' : 'Word' }}</p>
             <p class="text-sm">请在左侧选择一个文档，或点击上方“新建空白文档”。</p>
           </div>
           
@@ -176,7 +176,7 @@
             <!-- Page Header -->
             <div class="h-16 px-16 flex items-end pb-2 border-b border-zinc-100">
               <div class="w-full flex justify-between text-xs text-zinc-400 font-serif">
-                <span>CloudOffice Document</span>
+                <span>TeamCollab Document</span>
                 <span>{{ activeFile.split('/').pop() }}</span>
               </div>
             </div>

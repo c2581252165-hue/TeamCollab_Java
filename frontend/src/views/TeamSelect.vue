@@ -136,7 +136,7 @@
     >
       <div class="p-2">
         <div class="flex justify-between items-center mb-6">
-          <h2 class="text-xl font-semibold text-zinc-900 tracking-tight">CloudOffice 核心特性</h2>
+          <h2 class="text-xl font-semibold text-zinc-900 tracking-tight">TeamCollab Java 核心特性</h2>
           <el-button circle plain @click="closeWelcomeDialog" class="border-0 bg-transparent hover:bg-zinc-100 text-zinc-500">
             <el-icon><Close /></el-icon>
           </el-button>

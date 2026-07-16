@@ -30,4 +30,5 @@ application-local.yml
 *.ppt
 *.pptx
 !docs/
-!docs/介绍.docx
+!docs/项目介绍.docx
+!docs/项目升级对比报告.docx

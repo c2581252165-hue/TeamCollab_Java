@@ -1,8 +1,24 @@
-# TeamCollab 智能团队协作平台
+# TeamCollab Java 升级版
 
-TeamCollab 是一个面向课程实训、团队项目和小型研发协作场景的 Web 项目管理平台。项目包含 Spring Boot 后端和 Vue 3 前端，支持多团队空间、任务看板、成员管理、积分商城、每日站会、甘特图、操作日志，以及基于 AI 的任务拆解、周报总结、风险评估和代码辅助能力。
+TeamCollab Java 升级版是 **team-collab 的 Java 升级版**。项目在原有 team-collab 团队协作原型的基础上，将后端升级为 Spring Boot + Spring Security + Spring Data JPA + MySQL，前端保留 Vue 3 + Vite 单页应用形态，并补充多团队空间、任务看板、成员管理、积分商城、每日站会、甘特图、操作日志和 AI 辅助协作能力。
 
-项目介绍文档见：[docs/介绍.docx](docs/%E4%BB%8B%E7%BB%8D.docx)
+本仓库定位为公开展示版：保留源码、项目介绍文档和升级对比报告；不包含真实数据库密码、JWT 密钥、API Key、默认登录后门或本地机器路径。
+
+## 项目文档
+
+- 项目介绍文档：[docs/项目介绍.docx](docs/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D.docx)
+- Java 升级对比报告：[docs/项目升级对比报告.docx](docs/%E9%A1%B9%E7%9B%AE%E5%8D%87%E7%BA%A7%E5%AF%B9%E6%AF%94%E6%8A%A5%E5%91%8A.docx)
+
+## 升级说明
+
+相较于旧版 team-collab 原型，本版本重点完成了以下升级：
+
+- 后端升级：由原型后端升级为 Spring Boot Java 后端，按 Controller、Service、Repository、Entity 分层组织。
+- 鉴权升级：引入 Spring Security 与 JWT，支持登录鉴权和接口权限控制。
+- 数据升级：使用 MySQL 8.0 与 Spring Data JPA 管理用户、团队、任务、积分、商城、站会等业务数据。
+- 协作升级：补充多团队空间、队长通知、成员管理、任务承接、专注模式、甘特图、回收站和操作日志。
+- AI 升级：集成任务拆解、项目周报、站会总结、风险评估、工作量分析、需求文档撰写、代码诊断、全局分析和智能期末评级等辅助能力。
+- 部署升级：公开版统一使用环境变量配置敏感信息，避免把本地密码、密钥或机器路径写入仓库。
 
 ## 功能亮点
 
@@ -45,10 +61,13 @@ TeamCollab 是一个面向课程实训、团队项目和小型研发协作场景
 
 ```text
 team-collab-platform/
-├── backend_java/      # Spring Boot 后端
-├── frontend/          # Vue 3 + Vite 前端
-├── docs/              # 项目介绍文档
-├── .env.example       # 本地环境变量示例
+├── backend_java/                 # Spring Boot 后端
+├── frontend/                     # Vue 3 + Vite 前端
+├── docs/                         # 项目介绍与升级报告
+│   ├── 项目介绍.docx
+│   └── 项目升级对比报告.docx
+├── .env.example                  # 本地环境变量示例
+├── start_teamcollab_java.bat     # Windows 一键启动脚本
 └── README.md
 ```
 
@@ -87,10 +106,16 @@ npm run dev
 
 前端默认运行在 `http://localhost:5173`。
 
+## Windows 一键启动
+
+```powershell
+.\start_teamcollab_java.bat
+```
+
 ## 账号说明
 
 公开仓库不提供默认账号、默认密码或固定登录后门。请启动后端后，通过注册入口创建本地账号。
 
 ## 上传说明
 
-仓库已配置 `.gitignore`，默认排除 `node_modules/`、`target/`、日志文件、压缩包、PPT、PDF、Word 等非源码材料；当前只额外保留 `docs/介绍.docx` 作为项目说明文档。
+仓库已配置 `.gitignore`，默认排除 `node_modules/`、`target/`、日志文件、压缩包、PPT、PDF、非必要 Word 文档等非源码材料；当前只额外保留 `docs/项目介绍.docx` 和 `docs/项目升级对比报告.docx` 作为项目展示文档。

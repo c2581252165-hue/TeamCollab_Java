@@ -1,6 +1,6 @@
-# TeamCollab Backend
+# TeamCollab Java Backend
 
-本后端项目基于 Spring Boot 2.7.18 构建，提供 RESTful API、JWT 认证鉴权、全局异常处理和基于 JPA 的 ORM 模型。
+本后端项目是 team-collab 的 Java 升级版后端，基于 Spring Boot 2.7.18 构建，提供 RESTful API、JWT 认证鉴权、全局异常处理和基于 JPA 的 ORM 模型。
 
 ## 环境要求
 

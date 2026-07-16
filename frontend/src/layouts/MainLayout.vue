@@ -9,7 +9,7 @@
     <aside class="w-64 border-r border-zinc-200 bg-zinc-50/50 flex flex-col shrink-0 transition-all duration-300">
       <div class="h-14 flex items-center px-4 border-b border-zinc-200">
         <div class="w-7 h-7 bg-zinc-900 text-white rounded flex items-center justify-center font-bold mr-3 text-sm">C</div>
-        <span class="font-semibold text-sm tracking-tight">CloudOffice</span>
+        <span class="font-semibold text-sm tracking-tight">TeamCollab Java</span>
       </div>
       
       <div class="flex-1 overflow-y-auto py-4 px-3 space-y-1 custom-scrollbar">
@@ -108,7 +108,7 @@
       <header class="h-14 border-b border-zinc-200 flex items-center justify-between px-6 shrink-0 bg-white">
         <!-- Breadcrumb / Title -->
         <div class="flex items-center text-sm text-zinc-600 font-medium">
-          <span>{{ authStore.user?.current_project?.name || 'CloudOffice' }}</span>
+          <span>{{ authStore.user?.current_project?.name || 'TeamCollab Java' }}</span>
           
           <div v-if="authStore.user?.current_project?.invite_code" 
                @click="copyInviteCode(authStore.user.current_project.invite_code)"

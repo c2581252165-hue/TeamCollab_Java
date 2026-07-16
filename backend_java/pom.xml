@@ -11,8 +11,8 @@
     <groupId>com.teamcollab</groupId>
     <artifactId>backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>backend</name>
-    <description>Based on Spring Boot Java Web/JavaEE B/S Architecture Project</description>
+    <name>TeamCollab Java Backend</name>
+    <description>TeamCollab Java upgrade backend based on Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
